@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            <div class="logo-header">
+                <img src="img/logo.png" alt="" id="logo-img">
+                <h1>Lumina</h1>
+            </div>
+            <div class="links-header">
+                <div class="link-class"><a href="">Home</a></div>
+                <div class="link-class"><a href="#rolunk">Rólunk</a></div>
+                <div class="link-class"><a href="#szolgaltatasok">Szolgáltatások</a></div>
+                <div class="link-class"><a href="#kapcsolat">Kapcsolat</a></div>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+              <img src="img/stairs1.jpg" alt="Image 1" id="slider-img">
+              <img src="img/stairs2.jpg" alt="Image 2" id="slider-img">
+              <img src="img/stairs3.jpg" alt="Image 3" id="slider-img">
+              <!-- Add more images as needed -->
+            </div>
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <!-- Add more dots as needed -->
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <div class="first-section">
+            <div class="first-half">
+                <div class="large-text" id="rolunk">
+                    <p>Bővebben rólunk</p>
+                </div>
+                <div class="med-text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut accusamus, explicabo debitis facere perspiciatis aliquam in ipsam quod asperiores quis voluptas laudantium, repellat inventore voluptatum quos fugit expedita eum quam?</p>
+                </div>
+                <div class="small-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium autem iste illo quod expedita delectus ipsam odio iusto, fugiat labore, voluptatum qui officia magni at magnam. Dolore illum similique officiis illo nostrum corporis accusamus libero numquam voluptate facere vero incidunt sit, ut, sapiente perferendis id sequi, reiciendis dolorem quo minima veritatis quia est maiores ducimus! Ducimus veritatis ex dicta.</p>
+                </div>
+                <div>
+                    <button onclick="window.open('https://google.com', '_blank');" class="explore-button">FEDEZZE FEL A SZOLGÁLTATÁST ➜</button>
+                </div>
+            </div>
+            <div class="second-half">
+                <img src="img/chair.png" id="first-img">
+            </div>
+        </div>
+
+        <div class="second-section">
+            <div class="third-half">
+                <div class="text-top">
+                    <div class="large-text" id="szolgaltatasok">
+                        <p>Szolgáltatások</p>
+                    </div>
+                    <div class="med-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est sit ducimus totam temporibus distinctio?</p>
+                    </div>
+                </div>
+                <div class="four-container">
+                    <div class="top-row">
+                        <div class="down">
+                            <div class="item">
+                                <img src="img/paint-roller.png" id="small-img">
+                                <div class="text-content">
+                                    <p>Interior expertise</p>
+                                </div>
+                            </div>
+                            <div class="small-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam.</p>
+                                </div>
+                        </div>  
+                        <div class="down">
+                            <div class="item">
+                                <img src="img/bulb.png" id="small-img">
+                                <div class="text-content">
+                                    <p>Interior expertise</p>
+                                </div>
+                            </div>
+                            <div class="small-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam.</p>
+                                </div>
+                        </div> 
+                    </div>
+                    <div class="bottom-row">
+                        <div class="down">
+                            <div class="item">
+                                <img src="img/slice.png" id="small-img">
+                                <div class="text-content">
+                                    <p>Interior expertise</p>
+                                </div>
+                            </div>
+                            <div class="small-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam.</p>
+                                </div>
+                        </div> 
+                        <div class="down">
+                            <div class="item">
+                                <img src="img/sun.png" id="small-img">
+                                <div class="text-content">
+                                    <p>Interior expertise</p>
+                                </div>
+                            </div>
+                            <div class="small-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, numquam.</p>
+                                </div>
+                        </div> 
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <div class="fourth-half"><img src="img/couch.png" id="couch-img"></div>
+        </div>
+
+        <div class="third-section">
+            <div id="kapcsolat">
+            <p class="large-text">Kapcsolat</p>
+            </div>
+            <div class="message-container">
+                <div class="contact-half">
+                <form action="#" method="post">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+                
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="message-half">
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            
+                    <input type="submit" value="Send Message" id="send-button">
+                </div>
+            </div>
+            </form>
+        </div>
+
+    </div>
+    <script defer src="script1.js"></script>
+</body>
+</html>
